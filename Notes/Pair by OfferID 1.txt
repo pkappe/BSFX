@@ -1,0 +1,26 @@
+1 	EUR/USD
+2 	USD/JPY
+3 	GBP/USD
+4	USD/CHF
+5	EUR/CHF
+6	AUD/USD
+7	USD/CAD
+8	NZD/USD
+10	EUR/JPY
+11	GBP/JPY
+12	CHF/JPY
+13	GBP/CHF
+14	EUR/AUD
+15	EUR/CAD
+16	AUD/CAD
+17	AUD/JPY
+18	CAD/JPY
+19	NZD/JPY
+21	GBP/NZD
+22	GBP/AUD
+
+
+sOfferID = "";
+iAmount = Convert.ToInt32(lotSize);
+sBuySell = "";
+CreateTrueMarketOrder(sOfferID,  sAccountID,  iAmount,  sBuySell);

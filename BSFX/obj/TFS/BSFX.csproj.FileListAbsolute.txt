@@ -1,0 +1,12 @@
+E:\OneDrive\Dev\BSFX\BSFX\bin\TFS\BSFX.exe.config
+E:\OneDrive\Dev\BSFX\BSFX\obj\TFS\Interop.ADODB.dll
+E:\OneDrive\Dev\BSFX\BSFX\obj\TFS\Interop.MDACVer.dll
+E:\OneDrive\Dev\BSFX\BSFX\obj\TFS\BSFX.csproj.ResolveComReference.cache
+E:\OneDrive\Dev\BSFX\BSFX\bin\TFS\BSFX.exe
+E:\OneDrive\Dev\BSFX\BSFX\bin\TFS\fxcore2.dll
+E:\OneDrive\Dev\BSFX\BSFX\obj\TFS\BSFX.csprojResolveAssemblyReference.cache
+E:\OneDrive\Dev\BSFX\BSFX\obj\TFS\BSFX.AboutBox.resources
+E:\OneDrive\Dev\BSFX\BSFX\obj\TFS\BSFX.BSFX.resources
+E:\OneDrive\Dev\BSFX\BSFX\obj\TFS\BSFX.Properties.Resources.resources
+E:\OneDrive\Dev\BSFX\BSFX\obj\TFS\BSFX.csproj.GenerateResource.Cache
+E:\OneDrive\Dev\BSFX\BSFX\obj\TFS\BSFX.exe

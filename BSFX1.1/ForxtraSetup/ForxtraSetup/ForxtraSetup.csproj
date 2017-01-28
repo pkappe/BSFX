@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96F629B0-4DC3-4FD7-B7F7-34ED4BE7E64C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ForxtraSetup</RootNamespace>
+    <AssemblyName>ForxtraSetup</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://50.62.160.137/httpdocs/downloads/</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://kaptechtechnologies.com/downloads/ForxtraSetup.exe/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ForxtraSetup.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>terminal.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>01374A4AC75FA3C131C0D0CBF80B5C368C1C80CE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ForxtraSetup_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\100k\Forxtra100k-JPY.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\100k\Forxtra100k-JPY.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\100k\Forxtra100k.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\100k\Forxtra100k.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\10k\Forxtra10k-JPY.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\10k\Forxtra10k-JPY.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\10k\Forxtra10k.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\10k\Forxtra10k.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\1k\Forxtra1k-JPY.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\1k\Forxtra1k-JPY.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\1k\Forxtra1k.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\1k\Forxtra1k.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\50k\Forxtra50k-JPY.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\50k\Forxtra50k-JPY.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\50k\Forxtra50k.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\50k\Forxtra50k.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\5k\Forxtra5k-JPY.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\5k\Forxtra5k-JPY.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\5k\Forxtra5k.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Experts\Forxtra\100-25\5k\Forxtra5k.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Arrays\Array.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Arrays\ArrayChar.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Arrays\ArrayDouble.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Arrays\ArrayFloat.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Arrays\ArrayInt.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Arrays\ArrayLong.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Arrays\ArrayObj.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Arrays\ArrayShort.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Arrays\ArrayString.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Arrays\List.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Arrays\Tree.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Arrays\TreeNode.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Canvas\Canvas.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\ChartObjects\ChartObject.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\ChartObjects\ChartObjectPanel.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\ChartObjects\ChartObjectsArrows.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\ChartObjects\ChartObjectsBmpControls.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\ChartObjects\ChartObjectsChannels.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\ChartObjects\ChartObjectsFibo.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\ChartObjects\ChartObjectsGann.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\ChartObjects\ChartObjectsLines.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\ChartObjects\ChartObjectsShapes.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\ChartObjects\ChartObjectsTxtControls.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Charts\Chart.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\BmpButton.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\Button.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\CheckBox.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\CheckGroup.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\ComboBox.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\DateDropList.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\DatePicker.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\Defines.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\Dialog.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\Edit.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\Label.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\ListView.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\Panel.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\Picture.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\RadioButton.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\RadioGroup.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\Rect.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\Scrolls.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\SpinEdit.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\TimePicker.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\Wnd.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\WndClient.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\WndContainer.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\WndObj.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Files\File.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Files\FileBin.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Files\FilePipe.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Files\FileTxt.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Indicators\BillWilliams.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Indicators\Custom.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Indicators\Indicator.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Indicators\Indicators.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Indicators\Oscilators.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Indicators\Series.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Indicators\TimeSeries.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Indicators\Trend.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Indicators\Volumes.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\MovingAverages.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Object.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\stderror.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\stdlib.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\StdLibErr.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Strings\String.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\WinUser32.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Accelerator.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Accelerator.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Accumulation.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Accumulation.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Alligator.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Alligator.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\ATR.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\ATR.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Awesome.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Awesome.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Bands.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Bands.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Bears.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Bears.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Bulls.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Bulls.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\CCI.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\CCI.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Custom Moving Averages.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Custom Moving Averages.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Examples\SimplePanel\PanelDialog.mqh" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Examples\SimplePanel\SimplePanel.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Examples\SimplePanel\SimplePanel.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Heiken Ashi.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Heiken Ashi.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Ichimoku.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Ichimoku.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\iExposure.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\iExposure.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\MACD.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\MACD.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Momentum.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Momentum.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\mqlcache.dat" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\OsMA.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\OsMA.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Parabolic.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Parabolic.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\RSI.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\RSI.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Stochastic.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\Stochastic.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\ZigZag.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Indicators\ZigZag.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Libraries\mqlcache.dat" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Libraries\stdlib.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Libraries\stdlib.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Logs\20141229.log" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Logs\20141230.log" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Presets\10-10-10.set" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Presets\100-40-25 1k.set" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Presets\100-50-NONE 1k.set" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Presets\100-50-NONE.set" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Presets\250-100-1000.set" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Scripts\Examples\DLL\DLLSampleTester.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Scripts\Examples\DLL\DLLSampleTester.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Scripts\Examples\Pipes\PipeClient.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Scripts\Examples\Pipes\PipeClient.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Scripts\Examples\Pipes\PipeClientPure.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Scripts\Examples\Pipes\PipeClientPure.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Scripts\mqlcache.dat" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Scripts\PeriodConverter.ex4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Scripts\PeriodConverter.mq4" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart01.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart02.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart03.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart04.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart05.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart06.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart07.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart08.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart09.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart10.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart11.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart12.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart13.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart14.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart15.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart16.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart17.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart18.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart19.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart20.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart21.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart22.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart23.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart24.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart25.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\chart26.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 100k\order.wnd" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart01.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart02.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart03.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart04.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart05.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart06.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart07.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart08.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart09.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart10.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart11.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart12.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart13.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart14.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart15.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart16.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart17.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart18.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart19.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart20.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart21.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart22.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart23.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart24.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart25.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\chart26.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 10k\order.wnd" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart01.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart02.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart03.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart04.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart05.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart06.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart07.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart08.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart09.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart10.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart11.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart12.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart13.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart14.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart15.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart16.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart17.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart18.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart19.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart20.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart21.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart22.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart23.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart24.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart25.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\chart26.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 1k\order.wnd" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart01.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart02.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart03.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart04.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart05.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart06.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart07.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart08.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart09.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart10.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart11.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart12.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart13.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart14.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart15.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart16.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart17.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart18.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart19.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart20.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart21.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart22.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart23.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart24.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart25.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\chart26.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 50k\order.wnd" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart01.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart02.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart03.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart04.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart05.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart06.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart07.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart08.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart09.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart10.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart11.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart12.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart13.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart14.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart15.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart16.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart17.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart18.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart19.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart20.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart21.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart22.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart23.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart24.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart25.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\chart26.chr" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\Forxtra 5k\order.wnd" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\hotkeys.ini" />
+    <None Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\lastprofile.ini" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InstallButton2.png" />
+    <None Include="Resources\BarChart.ico" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\CheckBoxOff.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\CheckBoxOn.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\Close.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\CloseDisable.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\CloseOff.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\CloseOn.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\DateDropOff.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\DateDropOn.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\Down.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\DownDisable.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\DownSmall.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\DownTransp.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\down_smoll.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\DropOff.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\DropOn.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\ExpandDisable.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\ExpandOff.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\ExpandOn.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\HelpDisable.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\HelpOff.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\HelpOn.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\Left.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\LeftDisable.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\LeftTransp.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\RadioButtonOff.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\RadioButtonOn.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\Restore.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\RestoreDisable.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\RestoreOff.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\RestoreOn.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\Right.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\RightDisable.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\RightTransp.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\SpinDec.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\SpinInc.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\ThumbHor.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\ThumbHorDisable.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\ThumbVert.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\ThumbVertDisable.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\Turn.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\TurnOff.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\TurnOn.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\Up.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\UpDisable.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\UpSmall.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\UpTransp.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Include\Controls\res\up_smoll.bmp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Scripts\Examples\DLL\DLLSample.cpp" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Scripts\Examples\DLL\DLLSample.def" />
+    <Content Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Scripts\Examples\DLL\Libraries\DLLSample.dll" />
+    <Content Include="Resources\computer-diagnostic.png" />
+    <None Include="Resources\UpdateButton.png" />
+    <Content Include="Resources\USG.png" />
+    <Content Include="terminal.ico" />
+    <Content Include="usgfx4setup.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Files\" />
+    <Folder Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Images\" />
+    <Folder Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\MQL4\Projects\" />
+    <Folder Include="MetaQuotes\Terminal\5A590048FA8C0D1558C5BA77A5A1447F\profiles\default\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

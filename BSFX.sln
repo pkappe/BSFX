@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSFX", "BSFX\BSFX.csproj", "{E73B860F-7ED0-4F15-807F-0C879889392D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+		TFS|Any CPU = TFS|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E73B860F-7ED0-4F15-807F-0C879889392D}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{E73B860F-7ED0-4F15-807F-0C879889392D}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{E73B860F-7ED0-4F15-807F-0C879889392D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73B860F-7ED0-4F15-807F-0C879889392D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73B860F-7ED0-4F15-807F-0C879889392D}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73B860F-7ED0-4F15-807F-0C879889392D}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{E73B860F-7ED0-4F15-807F-0C879889392D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73B860F-7ED0-4F15-807F-0C879889392D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E73B860F-7ED0-4F15-807F-0C879889392D}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{E73B860F-7ED0-4F15-807F-0C879889392D}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{E73B860F-7ED0-4F15-807F-0C879889392D}.TFS|Any CPU.ActiveCfg = TFS|Any CPU
+		{E73B860F-7ED0-4F15-807F-0C879889392D}.TFS|Any CPU.Build.0 = TFS|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

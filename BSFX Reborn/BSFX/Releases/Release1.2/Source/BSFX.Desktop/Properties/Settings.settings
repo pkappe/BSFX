@@ -1,0 +1,56 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BSFX.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BSFXdb" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Dsn=BSFX32&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.Odbc&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Dsn=BSFX32</Value>
+    </Setting>
+    <Setting Name="sUserID" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="sPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="buyLong" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.0250</Value>
+    </Setting>
+    <Setting Name="goalLong" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.0100</Value>
+    </Setting>
+    <Setting Name="interval" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">16</Value>
+    </Setting>
+    <Setting Name="maxSpread" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.0005</Value>
+    </Setting>
+    <Setting Name="sConnection" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Demo</Value>
+    </Setting>
+    <Setting Name="lotSize" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="stopLoss" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="sellShort" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">-0.0250</Value>
+    </Setting>
+    <Setting Name="goalShort" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">-0.0100</Value>
+    </Setting>
+    <Setting Name="volValue" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="volRestrict" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="volResEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

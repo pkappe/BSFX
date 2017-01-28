@@ -1,0 +1,5 @@
+Move=0.01
+StopLoss=0.004
+Goal=0.0025
+MaxSpread=0.0005
+lotSize=0.01

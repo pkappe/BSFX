@@ -1,0 +1,7 @@
+E:\OneDrive\Dev\BSFX\BSFX1.1\ForxtraSetup\ForxtraSetup\obj\Debug\ForxtraSetup.csprojResolveAssemblyReference.cache
+E:\OneDrive\Dev\BSFX\BSFX1.1\ForxtraSetup\ForxtraSetup\obj\Debug\ForxtraSetup.Main.resources
+E:\OneDrive\Dev\BSFX\BSFX1.1\ForxtraSetup\ForxtraSetup\obj\Debug\ForxtraSetup.Properties.Resources.resources
+E:\OneDrive\Dev\BSFX\BSFX1.1\ForxtraSetup\ForxtraSetup\obj\Debug\ForxtraSetup.csproj.GenerateResource.Cache
+E:\OneDrive\Dev\BSFX\BSFX1.1\ForxtraSetup\ForxtraSetup\obj\Debug\ForxtraSetup.exe.manifest
+E:\OneDrive\Dev\BSFX\BSFX1.1\ForxtraSetup\ForxtraSetup\obj\Debug\ForxtraSetup.exe
+E:\OneDrive\Dev\BSFX\BSFX1.1\ForxtraSetup\ForxtraSetup\obj\Debug\ForxtraSetup.pdb

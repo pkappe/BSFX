@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BSFXdata" targetNamespace="http://tempuri.org/BSFXdata.xsd" xmlns:mstns="http://tempuri.org/BSFXdata.xsd" xmlns="http://tempuri.org/BSFXdata.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BSFXdata" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="BSFXdata" msprop:Generator_UserDSName="BSFXdata">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Offers" msprop:Generator_TableClassName="OffersDataTable" msprop:Generator_TableVarName="tableOffers" msprop:Generator_TablePropName="Offers" msprop:Generator_RowDeletingName="OffersRowDeleting" msprop:Generator_RowChangingName="OffersRowChanging" msprop:Generator_RowEvHandlerName="OffersRowChangeEventHandler" msprop:Generator_RowDeletedName="OffersRowDeleted" msprop:Generator_UserTableName="Offers" msprop:Generator_RowChangedName="OffersRowChanged" msprop:Generator_RowEvArgName="OffersRowChangeEvent" msprop:Generator_RowClassName="OffersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OfferID" msprop:Generator_ColumnVarNameInTable="columnOfferID" msprop:Generator_ColumnPropNameInRow="OfferID" msprop:Generator_ColumnPropNameInTable="OfferIDColumn" msprop:Generator_UserColumnName="OfferID" type="xs:string" />
+              <xs:element name="Instrument" msprop:Generator_ColumnVarNameInTable="columnInstrument" msprop:Generator_ColumnPropNameInRow="Instrument" msprop:Generator_ColumnPropNameInTable="InstrumentColumn" msprop:Generator_UserColumnName="Instrument" type="xs:string" minOccurs="0" />
+              <xs:element name="Bid" msprop:Generator_ColumnVarNameInTable="columnBid" msprop:Generator_ColumnPropNameInRow="Bid" msprop:Generator_ColumnPropNameInTable="BidColumn" msprop:Generator_UserColumnName="Bid" type="xs:double" minOccurs="0" />
+              <xs:element name="Ask" msprop:Generator_ColumnVarNameInTable="columnAsk" msprop:Generator_ColumnPropNameInRow="Ask" msprop:Generator_ColumnPropNameInTable="AskColumn" msprop:Generator_UserColumnName="Ask" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

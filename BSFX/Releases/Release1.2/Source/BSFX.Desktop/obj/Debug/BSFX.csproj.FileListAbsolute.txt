@@ -1,0 +1,14 @@
+E:\OneDrive\Dev\BSFX\BSFX\Releases\Release1.2\Source\BSFX.Desktop\bin\Debug\BSFX.exe.config
+E:\OneDrive\Dev\BSFX\BSFX\Releases\Release1.2\Source\BSFX.Desktop\obj\Debug\Interop.ADODB.dll
+E:\OneDrive\Dev\BSFX\BSFX\Releases\Release1.2\Source\BSFX.Desktop\obj\Debug\Interop.MDACVer.dll
+E:\OneDrive\Dev\BSFX\BSFX\Releases\Release1.2\Source\BSFX.Desktop\obj\Debug\BSFX.csproj.ResolveComReference.cache
+E:\OneDrive\Dev\BSFX\BSFX\Releases\Release1.2\Source\BSFX.Desktop\bin\Debug\BSFX.exe
+E:\OneDrive\Dev\BSFX\BSFX\Releases\Release1.2\Source\BSFX.Desktop\bin\Debug\BSFX.pdb
+E:\OneDrive\Dev\BSFX\BSFX\Releases\Release1.2\Source\BSFX.Desktop\bin\Debug\fxcore2.dll
+E:\OneDrive\Dev\BSFX\BSFX\Releases\Release1.2\Source\BSFX.Desktop\obj\Debug\BSFX.csprojResolveAssemblyReference.cache
+E:\OneDrive\Dev\BSFX\BSFX\Releases\Release1.2\Source\BSFX.Desktop\obj\Debug\BSFX.AboutBox.resources
+E:\OneDrive\Dev\BSFX\BSFX\Releases\Release1.2\Source\BSFX.Desktop\obj\Debug\BSFX.BSFX.resources
+E:\OneDrive\Dev\BSFX\BSFX\Releases\Release1.2\Source\BSFX.Desktop\obj\Debug\BSFX.Properties.Resources.resources
+E:\OneDrive\Dev\BSFX\BSFX\Releases\Release1.2\Source\BSFX.Desktop\obj\Debug\BSFX.csproj.GenerateResource.Cache
+E:\OneDrive\Dev\BSFX\BSFX\Releases\Release1.2\Source\BSFX.Desktop\obj\Debug\BSFX.exe
+E:\OneDrive\Dev\BSFX\BSFX\Releases\Release1.2\Source\BSFX.Desktop\obj\Debug\BSFX.pdb

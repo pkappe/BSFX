@@ -1,0 +1,1 @@
+﻿SELECT * FROM dbo.UserAuth WHERE UserName ='pkappe'

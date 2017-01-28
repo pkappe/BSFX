@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Data" targetNamespace="http://tempuri.org/Data.xsd" xmlns:mstns="http://tempuri.org/Data.xsd" xmlns="http://tempuri.org/Data.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BSFXdb" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BSFXdb (Settings)" PropertyReference="ApplicationSettings.BSFX.Properties.Settings.GlobalReference.Default.BSFXdb" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Data" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Data" msprop:Generator_UserDSName="Data">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PriceTable" msprop:Generator_TableClassName="PriceTableDataTable" msprop:Generator_TableVarName="tablePriceTable" msprop:Generator_TablePropName="PriceTable" msprop:Generator_RowDeletingName="PriceTableRowDeleting" msprop:Generator_RowChangingName="PriceTableRowChanging" msprop:Generator_RowEvHandlerName="PriceTableRowChangeEventHandler" msprop:Generator_RowDeletedName="PriceTableRowDeleted" msprop:Generator_UserTableName="PriceTable" msprop:Generator_RowChangedName="PriceTableRowChanged" msprop:Generator_RowEvArgName="PriceTableRowChangeEvent" msprop:Generator_RowClassName="PriceTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PriceNow" msprop:Generator_ColumnVarNameInTable="columnPriceNow" msprop:Generator_ColumnPropNameInRow="PriceNow" msprop:Generator_ColumnPropNameInTable="PriceNowColumn" msprop:Generator_UserColumnName="PriceNow" type="xs:string" minOccurs="0" />
+              <xs:element name="PriceOne" msprop:Generator_ColumnVarNameInTable="columnPriceOne" msprop:Generator_ColumnPropNameInRow="PriceOne" msprop:Generator_ColumnPropNameInTable="PriceOneColumn" msprop:Generator_UserColumnName="PriceOne" type="xs:string" minOccurs="0" />
+              <xs:element name="PriceDiff" msprop:Generator_ColumnVarNameInTable="columnPriceDiff" msprop:Generator_ColumnPropNameInRow="PriceDiff" msprop:Generator_ColumnPropNameInTable="PriceDiffColumn" msprop:Generator_UserColumnName="PriceDiff" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="O2GOfferTable" msprop:Generator_TableClassName="O2GOfferTableDataTable" msprop:Generator_TableVarName="tableO2GOfferTable" msprop:Generator_TablePropName="O2GOfferTable" msprop:Generator_RowDeletingName="O2GOfferTableRowDeleting" msprop:Generator_RowChangingName="O2GOfferTableRowChanging" msprop:Generator_RowEvHandlerName="O2GOfferTableRowChangeEventHandler" msprop:Generator_RowDeletedName="O2GOfferTableRowDeleted" msprop:Generator_UserTableName="O2GOfferTable" msprop:Generator_RowChangedName="O2GOfferTableRowChanged" msprop:Generator_RowEvArgName="O2GOfferTableRowChangeEvent" msprop:Generator_RowClassName="O2GOfferTableRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

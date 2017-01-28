@@ -1,0 +1,3 @@
+File.AppendAllText(logLoc, time + ":" + " TEXT" + Environment.NewLine);
+File.AppendAllText(logLoc, time + ":" + " ERROR: " + logErr + Environment.NewLine);
+File.AppendAllText(logLoc, time + ":" + " PARAMETER: " + PARAMETER + Environment.NewLine);

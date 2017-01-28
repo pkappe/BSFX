@@ -1,0 +1,44 @@
+BASED ON AN MMR OF 38
+38 * LOTSIZE = POSITION COST
+
+1k - $38
+5k - $190
+10k - $380
+20k - $760
+30k - $1140
+40k - $1520
+50k - $1900
+60k - $2280
+70k - $2660
+80k - $3040
+90k - $3420
+100k - $3800
+110k - $4180
+120k - $4560
+150k - $5700
+200k - $7600
+
+
+audcad
+audjpy
+audusd
+cadjpy
+chfjpy
+euraud
+eurcad
+eurchf
+eurjpy
+eurusd
+gbpaud
+gbpchf
+gbpjpy
+gbpnzd
+gbpusd
+nzdjpy
+nzdusd
+usdcad
+usdchf
+usdjpy
+
+1 Hour = 3,600 seconds
+1 Minute = 
